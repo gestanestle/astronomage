@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Tangerine:wght@700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: black;
+    color:ivory;
+    font-family: 'Petit Formal Script', cursive;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+.header-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.container {
+    height: 500px;
+    background: rgb(196,190,65);
+background: radial-gradient(circle, rgba(196,190,65,0.5018382352941176) 0%, rgba(153,61,61,0.44861694677871145) 50%, rgba(2,1,38,1) 100%);    border-radius: 1%;
+    border: black;
+    color:ivory;
+}
+
+#row1 {
+    padding-top: 25px;
+}
+
+#question {
+    font-family: 'Tangerine', cursive;
+    font-size: 350%;
+}
+
+#select-birthday {
+    font-family: 'Petit Formal Script', cursive;
+}
+
+#row2 {
+    padding-top: 10px;
+
+}
+
+.img-thumbnail {
+    max-width: 70%;
+    max-height: 70%;
+    background-color: black; 
+    border-radius: 2%;
+}
+
+
