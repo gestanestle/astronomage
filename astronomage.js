@@ -1,8 +1,8 @@
 let date = new Date()
-//let year = date.getFullYear()
-//let month = String(date.getMonth() + 1).padStart(2, '0')
-//let currentDate = String(date.getDate()).padStart(2, '0')
-//let dateString = year + '-' + month + '-' + currentDate;
+let year = date.getFullYear()
+let month = String(date.getMonth() + 1).padStart(2, '0')
+let currentDate = String(date.getDate()).padStart(2, '0')
+let dateString = year + '-' + month + '-' + currentDate;
 //document.getElementById('date-picker').value = dateString
 
 let thisForm = document.getElementById("form")
@@ -14,8 +14,9 @@ $('#date-picker').datetimepicker({
     datepicker:true,
     value: date_picked,
     format:'Y-m-d',
-    monthEnd: date.getMonth(),
     yearEnd: date.getFullYear(),
+    minDate: new Date('1995-06-16'),
+    maxDate: dateString
 });
 
 
@@ -35,4 +36,14 @@ async function showImage(x) {
     <img src="${fetched_image}" class="img-thumbnail">
     </div>
     `
+}
+
+var load = document.getElementById("loading")
+
+$(window).on('load', function () {
+    $('#loading').hide();
+  }) 
+  
+function load() {
+    load.style.display = 'none';
 }
