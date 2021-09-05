@@ -3,7 +3,6 @@ let year = date.getFullYear()
 let month = String(date.getMonth() + 1).padStart(2, '0')
 let currentDate = String(date.getDate()).padStart(2, '0')
 let dateString = year + '-' + month + '-' + currentDate;
-//document.getElementById('date-picker').value = dateString
 
 let thisForm = document.getElementById("form")
 let date_picked = document.getElementById("date-picker")
@@ -32,8 +31,14 @@ async function showImage(x) {
 
     container.innerHTML = `
     <div class="row h-100 justify-content-center">
-    <h4 class="text-center mt-4">${data.title}</h4>
+    <div class="col-md-10 text-center">
+    <h4 class="text-center mt-4" style="font-weight:600">${data.title}</h4>
+    </br>
     <img src="${fetched_image}" class="img-thumbnail">
+    <p>${data.date}</p>
+    </br>
+    <p id="data-explanation">${data.explanation}</p>
+    </div>
     </div>
     `
 }

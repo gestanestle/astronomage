@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Tangerine:wght@700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     height: auto;
     padding: 0;
-    /**overflow: hidden;*/  
-    background-repeat: no-repeat;
+    background: url(wallpaper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .navbar {
     background-image: url('moonPhases.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color:ivory;
     font-family: 'Petit Formal Script', cursive;
     padding-top: 4%;
@@ -25,7 +34,7 @@ body {
 }
 
 .container {
-    height: 500px;
+    height: auto;
     background: rgb(113,179,94);
 background: radial-gradient(circle, rgba(113,179,94,0.29735644257703087) 0%, rgba(22,6,77,0.5046393557422969) 60%, rgba(0,0,0,1) 100%);
     border: black;
@@ -56,6 +65,12 @@ background: radial-gradient(circle, rgba(113,179,94,0.29735644257703087) 0%, rgb
     background-color: black; 
     border-radius: 2%;
 }
+
+#data-explanation {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
 .lds-spinner {
     color: official;
